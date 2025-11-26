@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* variaveis CSS*/
+:root{
+    --bg-primary: #041643;
+    --color-primary: #1352F1;
+    --color-white: #fff;
+
+    --gray: #4E4E4E;
+    --dark-gray: #696969;
+    --light-gray: #AFAFAF;
+}
+
+body{
+    background-color: var(--bg-primary);
+    background-image: url(../assets/gradient.svg); 
+    background-size: 50%;
+    background-repeat: no-repeat;
+    padding: 91px 123px;
+    height: 100vh;
+}
+
+.div-intro{
+    margin-top: 100px;
+}
+
+.div-intro > h1 {
+    width: 230px;
+    margin-bottom: 23px;
+}
+
+.div-intro > p {
+    color: #AFAFAF;
+}
+
+form label { 
+    font-size: 8px;
+}
+
+form{
+    background-color: var(--color-white);
+    width: 343.33px;
+    padding: 50px 30px;
+    margin-left: 550px;
+}
+
+form input {
+    width: 100%;
+}
+
+.link-cadastro {
+    font-size: 10px;
+}
+
+.link-cadastro a {
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 37px;
+    border-radius: 10px;
+    font-size: 9px;
+}
+footer > p {
+    color: var(--color-white);
+    
+}
