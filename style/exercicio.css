@@ -3,9 +3,15 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Axiforma', sans-serif;
+}
+
+@font-face{
+    font-family: "Axiforma";
+    src: url(../assets/Axiforma.otf)
+
 }
 
 /* variaveis CSS*/
@@ -17,21 +23,35 @@
     --gray: #4E4E4E;
     --dark-gray: #696969;
     --light-gray: #AFAFAF;
+    --lighter-gray: #d7d7d7;
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--bg-primary);
     background-image: url(../assets/gradient.svg); 
-    background-size: 50%;
+    background-size: 105vh;
     background-repeat: no-repeat;
-    padding: 91px 123px;
+    padding: 91px 123px 30px;
     height: 100vh;
 }
 
-.div-intro{
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 100px;
     margin-top: 100px;
+    align-items: stretch;
 }
 
+.div-intro{
+    flex: 1;
+    padding: 50px 50px;
+    width: 343.33px;
+}
 .div-intro > h1 {
     width: 230px;
     margin-bottom: 23px;
@@ -46,6 +66,8 @@ form label {
 }
 
 form{
+    border-radius: 11px;
+    flex: 1;
     background-color: var(--color-white);
     width: 343.33px;
     padding: 50px 30px;
@@ -53,9 +75,26 @@ form{
 
 form input {
     width: 100%;
+    border: 1px solid var(--light-gray);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    color: var(--lighter-gray);
+}
+
+form input::placeholder{
+    color: var(--lighter-gray);
+}
+
+.div-link-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .link-cadastro {
+    
     font-size: 10px;
 }
 
@@ -71,7 +110,9 @@ form input {
     border-radius: 10px;
     font-size: 9px;
 }
+
 footer > p {
     color: var(--color-white);
+    text-align: center;
     
 }
